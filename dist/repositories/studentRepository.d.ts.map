@@ -1,0 +1,1 @@
+{"version":3,"file":"studentRepository.d.ts","sourceRoot":"","sources":["../../src/repositories/studentRepository.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EACV,oBAAoB,EAErB,MAAM,6CAA6C,CAAC;AAGrD,qBAAa,iBAAkB,YAAW,oBAAoB;IACpD,MAAM,CAAC,IAAI,EAAE,GAAG;;;;;;;IAIhB,UAAU,CAAC,KAAK,EAAE,MAAM;;;;;;;CAGjC"}
