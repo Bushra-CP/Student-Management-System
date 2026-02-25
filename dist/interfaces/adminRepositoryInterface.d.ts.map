@@ -1,0 +1,1 @@
+{"version":3,"file":"adminRepositoryInterface.d.ts","sourceRoot":"","sources":["../../src/interfaces/adminRepositoryInterface.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,sBAAsB,CAAC;AAEpD,MAAM,WAAW,kBAAkB;IACjC,YAAY,CAAC,IAAI,EAAE,OAAO,GAAG,OAAO,CAAC,GAAG,CAAC,CAAC;CAC3C;AAED,MAAM,WAAW,YAAY;IAC3B,YAAY,IAAI,OAAO,CAAC,GAAG,CAAC,CAAC;CAC9B"}

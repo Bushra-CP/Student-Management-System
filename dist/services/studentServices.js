@@ -1,4 +1,4 @@
-export class StudentService {
+export class StudentRegisterService {
     studentRepo;
     constructor(studentRepo) {
         this.studentRepo = studentRepo;
@@ -9,6 +9,27 @@ export class StudentService {
             name,
             email,
         });
+    }
+    async showProfile(email) {
+        return this.studentRepo.findByMail(email);
+    }
+}
+export class ListCoursesService {
+    courses;
+    constructor(courses) {
+        this.courses = courses;
+    }
+    async listCourse() {
+        return this.courses.listCourse();
+    }
+}
+export class CourseEnrolService {
+    enrol;
+    constructor(enrol) {
+        this.enrol = enrol;
+    }
+    async enrolToCourse(courseId, email) {
+        return this.enrol.enrolToCourse(courseId, email);
     }
 }
 //# sourceMappingURL=studentServices.js.map

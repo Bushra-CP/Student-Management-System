@@ -1,12 +1,12 @@
 import mongoose, { Schema } from "mongoose";
 
 export interface CourseInterface {
-  title: string;
+  courseName: string;
   description: string;
 }
 
 const courseSchema = new Schema<CourseInterface>({
-  title: { type: String, required: true },
+  courseName: { type: String, required: true },
   description: { type: String },
 });
 

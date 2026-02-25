@@ -1,1 +1,1 @@
-{"version":3,"file":"courseModel.d.ts","sourceRoot":"","sources":["../../src/models/courseModel.ts"],"names":[],"mappings":"AAAA,OAAO,QAAoB,MAAM,UAAU,CAAC;AAE5C,MAAM,WAAW,eAAe;IAC9B,KAAK,EAAE,MAAM,CAAC;IACd,WAAW,EAAE,MAAM,CAAC;CACrB;AAOD,eAAO,MAAM,WAAW;;;;;;wBAGvB,CAAC"}
+{"version":3,"file":"courseModel.d.ts","sourceRoot":"","sources":["../../src/models/courseModel.ts"],"names":[],"mappings":"AAAA,OAAO,QAAoB,MAAM,UAAU,CAAC;AAE5C,MAAM,WAAW,eAAe;IAC9B,UAAU,EAAE,MAAM,CAAC;IACnB,WAAW,EAAE,MAAM,CAAC;CACrB;AAOD,eAAO,MAAM,WAAW;;;;;;wBAGvB,CAAC"}

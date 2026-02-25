@@ -1,17 +1,23 @@
-import { UserModel } from '../models/userModel.js';
+import { UserModel } from "../models/userModel.js";
+import { CourseModel } from "../models/courseModel.js";
 export class StudentRepository {
     async create(data) {
         return UserModel.create(data);
     }
     async findByMail(email) {
-        return UserModel.findOne({ email });
+        return UserModel.findOne({ email })
+            .select("name email courses")
+            .populate("courses", "title description");
     }
 }
-// async registerStudent(name: string, email: string) {
-//   return this.userRepo.create({
-//     name,
-//     email,
-//     role: Role.STUDENT
-//   });
-// }
+export class ListCoursesRepository {
+    async listCourse() {
+        return CourseModel.find();
+    }
+}
+export class CourseEnrolRepository {
+    async enrolToCourse(courseId, email) {
+        return UserModel.findOneAndUpdate({ email: email }, { $addToSet: { courses: courseId } }, { new: true });
+    }
+}
 //# sourceMappingURL=studentRepository.js.map

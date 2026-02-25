@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 export interface CourseInterface {
-    title: string;
+    courseName: string;
     description: string;
 }
 export declare const CourseModel: mongoose.Model<CourseInterface, {}, {}, {}, mongoose.Document<unknown, {}, CourseInterface, {}, mongoose.DefaultSchemaOptions> & CourseInterface & {
