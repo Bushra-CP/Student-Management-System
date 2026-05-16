@@ -2,11 +2,11 @@ import type { adminRepoInterface, ListStudents } from "../interfaces/adminReposi
 export declare class AdminServices {
     private adminRepo;
     constructor(adminRepo: adminRepoInterface);
-    create(courseName: string, description: string): Promise<any>;
+    create(courseName: string, description: string): Promise<import("../interfaces/courseInterface.js").Courses | null>;
 }
 export declare class StudentsListServices {
     private studentsList;
     constructor(studentsList: ListStudents);
-    students(): Promise<any>;
+    students(): Promise<import("../interfaces/userInterface.js").User[] | null>;
 }
 //# sourceMappingURL=adminServices.d.ts.map

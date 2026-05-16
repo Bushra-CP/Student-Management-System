@@ -3,6 +3,7 @@ import mongoose, { Schema } from "mongoose";
 export interface UserInterface {
   name: string;
   email: string;
+  password: string;
   role: string;
   courses: mongoose.Types.ObjectId[];
 }
@@ -10,6 +11,7 @@ export interface UserInterface {
 const userSchema = new Schema<UserInterface>({
   name: { type: String, required: true },
   email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
   role: { type: String, required: true, default: "Student" },
   courses: [{ type: Schema.Types.ObjectId, ref: "Course" }],
 });

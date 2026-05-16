@@ -8,8 +8,9 @@ export class AdminRepository {
 export class StudentsListRepository {
     async listStudents() {
         return UserModel.find()
-            .select("name email courses")
-            .populate("courses", "title description");
+            .select("name email courses -_id")
+            .populate("courses", "courseName description -_id")
+            .lean();
     }
 }
 //# sourceMappingURL=adminRepository.js.map

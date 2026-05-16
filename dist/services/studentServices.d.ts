@@ -2,17 +2,17 @@ import type { StudentRepoInterface, courseEnrolRepoInterface, ListCourses } from
 export declare class StudentRegisterService {
     private studentRepo;
     constructor(studentRepo: StudentRepoInterface);
-    registerStudent(name: string, email: string): Promise<any>;
-    showProfile(email: string): Promise<any>;
+    registerStudent(name: string, email: string): Promise<import("../interfaces/userInterface.js").User | null>;
+    showProfile(email: string): Promise<import("../interfaces/userInterface.js").User | null>;
 }
 export declare class ListCoursesService {
     private courses;
     constructor(courses: ListCourses);
-    listCourse(): Promise<any>;
+    listCourse(): Promise<import("../interfaces/courseInterface.js").Courses[] | null>;
 }
 export declare class CourseEnrolService {
     private enrol;
     constructor(enrol: courseEnrolRepoInterface);
-    enrolToCourse(courseId: string, email: string): Promise<any>;
+    enrolToCourse(courseId: string, email: string): Promise<import("../interfaces/userInterface.js").User | null>;
 }
 //# sourceMappingURL=studentServices.d.ts.map

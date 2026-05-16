@@ -1,4 +1,4 @@
-import { AdminServices, StudentsListServices } from "../services/adminServices.js";
+import { AdminServices, StudentsListServices, } from "../services/adminServices.js";
 export class AdminController {
     adminService;
     constructor(adminService) {
@@ -7,7 +7,12 @@ export class AdminController {
     createCourse = async (req, res) => {
         const { courseName, description } = req.body;
         const course = await this.adminService.create(courseName, description);
-        res.json({ "new course created": course });
+        res.json({
+            "new course created": {
+                courseName: course?.courseName,
+                description: course?.description,
+            },
+        });
     };
 }
 export class ListStudents {

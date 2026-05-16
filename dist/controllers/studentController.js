@@ -7,7 +7,12 @@ export class RegisterStudent {
     registerStudent = async (req, res) => {
         const { name, email } = req.body;
         const student = await this.studentRegisterService.registerStudent(name, email);
-        res.json({ "Registration successful": student });
+        res.json({
+            "Registration successful": {
+                name: student?.name,
+                email: student?.email,
+            },
+        });
     };
     getProfile = async (req, res) => {
         const { email } = req.body;

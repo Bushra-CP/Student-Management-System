@@ -1,18 +1,19 @@
+import type { Request, Response } from "express";
 import { StudentRegisterService, ListCoursesService, CourseEnrolService } from "../services/studentServices.js";
 export declare class RegisterStudent {
     private studentRegisterService;
     constructor(studentRegisterService: StudentRegisterService);
-    registerStudent: (req: any, res: any) => Promise<void>;
-    getProfile: (req: any, res: any) => Promise<void>;
+    registerStudent: (req: Request, res: Response) => Promise<void>;
+    getProfile: (req: Request, res: Response) => Promise<void>;
 }
 export declare class ListCourses {
     private listCourses;
     constructor(listCourses: ListCoursesService);
-    courseList: (req: any, res: any) => Promise<void>;
+    courseList: (req: Request, res: Response) => Promise<void>;
 }
 export declare class EnrolToCourse {
     private courseEnrol;
     constructor(courseEnrol: CourseEnrolService);
-    enrolCourse: (req: any, res: any) => Promise<void>;
+    enrolCourse: (req: Request, res: Response) => Promise<void>;
 }
 //# sourceMappingURL=studentController.d.ts.map
